@@ -16,9 +16,9 @@
 
 
 - Shows the last cope-USD rate inside the extension icon
-- A pop-up for cope to USD conversion
+- A pop-up for cope to USD rate, 24hr percentage, 24hr high, 24hr low, market cap and 24hr volume. 
 - Submits one GET request to Coingecko API every 5 seconds
-- Easy to audit and customize
+- Easy to audit and customize (Can be used for other cryptocurrencies based on coingecko API)
 
 ![demo](https://i.imgur.com/QHfvYZh.png)
 ![demo](https://i.imgur.com/q9ONx2h.png)
