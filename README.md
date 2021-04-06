@@ -24,7 +24,7 @@
 ![demo](https://i.imgur.com/q9ONx2h.png)
 ## Why do you need this?
 
-Looking for a simple price tracker, but avoid sophisticated solutions because of a possible security breach?  Then this extension for you. 
+To see cope go to the moon!
 
 The tracker fetches the cope price from Coingecko API for every 5 seconds, receives JSON result, and refresh the rate on the extension Bage. The code is super easy to audit and customize for other coins. 
 
