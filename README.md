@@ -20,7 +20,7 @@
 - Submits one GET request to Coingecko API every 5 seconds
 - Easy to audit and customize
 
-![demo](https://user-images.githubusercontent.com/25101963/80285875-a1be3a80-8730-11ea-81c8-27651767deff.gif)
+![demo]()
 ## Why do you need this?
 
 Looking for a simple price tracker, but avoid sophisticated solutions because of a possible security breach?  Then this extension for you. 
