@@ -9,6 +9,19 @@ let amt = marketcap = high = low = percentage = dailyvolume = 0;
  */
 const COINGECKO_COPE_PRICE_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=cope&order=market_cap_desc&per_page=100&page=1&sparkline=false"
 
+function kFormatter(num) {
+  if (num <= 9) return num.toFixed(2);
+  else if (num <= 99) return num.toFixed(2);
+  else if (num <= 999) return num.toFixed(1);
+  else if (num <= 9999) return ((num/1000).toFixed(2)) + 'K';
+  else if (num <= 99999) return ((num/1000).toFixed(1)) + 'K';
+  else if (num <= 999999) return ((num/1000).toFixed(0)) + 'K';
+  else if (num <= 9999999) return ((num/1000000).toFixed(2)) + 'M';
+  else if (num <= 99999999) return ((num/1000000).toFixed(1)) + 'M';
+  else if (num <= 999999999) return ((num/1000000).toFixed(0)) + 'M';
+  else return 'COPE';
+}
+
 /**
  * setBadge
  * --------
@@ -16,7 +29,10 @@ const COINGECKO_COPE_PRICE_URL = "https://api.coingecko.com/api/v3/coins/markets
  */
 const setBadge = (amt) => {
   chrome.browserAction.setBadgeText({
-    text: String(amt)
+    text: kFormatter(amt)
+  })
+  chrome.browserAction.setBadgeBackgroundColor({
+    color: percentage >= 0 ? '#67BD62' : '#DB1522' 
   })
 };
 

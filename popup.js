@@ -67,7 +67,7 @@ const fetchPercentage = (node) => {
     if(res>=0){
       node.style.color = "lightgreen";
     } else {
-      node.style.color = "lightred";
+      node.style.color = "red";
     }
   })
 };
